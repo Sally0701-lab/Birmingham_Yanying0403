@@ -12,7 +12,7 @@ This project explores how health outcomes influence national climate policy enga
 ---
 
 ## Project Structure
-
+- All analyses were performed using **R 4.4.2**.
 ### `data_cleaning.R`
 - Merges multi-source data:
     - Climate Change Laws of the World (CCLW)
