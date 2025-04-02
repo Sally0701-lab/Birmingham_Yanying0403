@@ -89,7 +89,7 @@ p2 <- ggplot(summary_df_2022, aes(x = Life_expectancy, y = Documentcount, color 
     data = summary_df_2022,
     mapping = aes(x = Life_expectancy, y = Documentcount, label = Geographies),
     size = 2, hjust = 0, vjust = 1.2, check_overlap = TRUE,
-    inherit.aes = FALSE  # 防止 label 被传到 legend
+    inherit.aes = FALSE  
   ) +
   scale_color_manual(values = region_colors) +
   labs(
@@ -104,8 +104,8 @@ p2 <- ggplot(summary_df_2022, aes(x = Life_expectancy, y = Documentcount, color 
     legend.justification = c("right", "top"),
     legend.box.background = element_rect(color = "gray80", fill = "white"),
     legend.background = element_blank(),
-    panel.grid = element_blank(),  # 移除背景网格线
-    axis.line = element_line(color = "black", size = 0.5)  # 保留坐标轴线
+    panel.grid = element_blank(), 
+    axis.line = element_line(color = "black", size = 0.5)  
   )
 ggsave("Life_expectancy vs Climate Policy Engagement .png", plot = p2, width = 8, height = 6, dpi = 600, bg = "white")
 
